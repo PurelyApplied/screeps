@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="TutorialScripts" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/../tutorial-scripts" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../tutorial-scripts" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
