@@ -1,8 +1,8 @@
-var roleHarvester = require('creeps/role.harvester');
-var roleUpgrader = require('creeps/role.upgrader');
-var roleBuilder = require('creeps/role.builder');
-var autospawn = require('autospawn');
-var gc = require('gc');
+var roleHarvester = require('./creeps/role.harvester');
+var roleUpgrader = require('./creeps/role.upgrader');
+var roleBuilder = require('./creeps/role.builder');
+var autospawn = require('./autospawn');
+var gc = require('./gc');
 
 module.exports.loop = function () {
     gc.run();

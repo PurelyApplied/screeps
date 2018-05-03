@@ -6,6 +6,6 @@ var creepCore = {
     // Functions
     run: null,
 
-}
+};
 
-module.exports = creepCore
+module.exports = creepCore;
