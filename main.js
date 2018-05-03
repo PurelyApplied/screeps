@@ -1,23 +1,12 @@
 var roleHarvester = require('creeps/role.harvester');
 var roleUpgrader = require('creeps/role.upgrader');
 var roleBuilder = require('creeps/role.builder');
+var autospawn = require('autospawn');
+var gc = require('gc');
 
 module.exports.loop = function () {
-
-    var tower = Game.getObjectById('TOWER_ID');
-    if(tower) {
-        var closestDamagedStructure = tower.pos.findClosestByRange(FIND_STRUCTURES, {
-            filter: (structure) => structure.hits < structure.hitsMax
-        });
-        if(closestDamagedStructure) {
-            tower.repair(closestDamagedStructure);
-        }
-
-        var closestHostile = tower.pos.findClosestByRange(FIND_HOSTILE_CREEPS);
-        if(closestHostile) {
-            tower.attack(closestHostile);
-        }
-    }
+    gc.run();
+    autospawn.run();
 
     for(var name in Game.creeps) {
         var creep = Game.creeps[name];
@@ -31,4 +20,4 @@ module.exports.loop = function () {
             roleBuilder.run(creep);
         }
     }
-}
+};
