@@ -8,6 +8,6 @@ var gc = {
         }
 
     }
-}
+};
 
-module.exports = gc
+module.exports = gc;

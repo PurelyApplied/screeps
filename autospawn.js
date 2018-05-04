@@ -19,6 +19,6 @@ var autospawner = {
                 {align: 'left', opacity: 0.8});
         }
     }
-}
+};
 
-module.exports = autospawner
+module.exports = autospawner;
